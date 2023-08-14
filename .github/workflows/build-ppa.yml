@@ -20,10 +20,6 @@ jobs:
 
       - name: Install required packages
         run: |
-          sudo rm /etc/apt/sources.list.d/microsoft-prod.list
-          sudo apt update
-          sudo apt purge dotnet*
-          sudo apt autoremove
           sudo apt install curl locales-all cli-common-dev libunwind8-dev libcurl4-openssl-dev rustc cargo devscripts debhelper-compat dput
         
       - name: Initialize offline package
