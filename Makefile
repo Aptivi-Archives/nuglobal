@@ -15,8 +15,8 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-OUTPUTS = targets debian/nuglobal
-BINARIES = targets/release/nuglobal
+OUTPUTS = target debian/nuglobal
+BINARIES = target/release/nuglobal
 MANUALS = doc/nuglobal.1
 
 .PHONY: all all-online-release debian-install
