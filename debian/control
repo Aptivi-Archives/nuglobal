@@ -1,0 +1,18 @@
+Source: nuglobal
+Section: devel
+Priority: optional
+Maintainer: EoflaOE <eoflaoevicecity@gmail.com>
+Build-Depends: debhelper-compat (= 12), cargo, rustc
+Standards-Version: 4.4.0
+Homepage: https://aptivi.gitbook.io/nuglobal-manual
+Vcs-Browser: https://github.com/Aptivi/nuglobal
+Vcs-Git: https://github.com/Aptivi/nuglobal.git
+
+Package: nuglobal
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}, cargo, rustc
+Description: Offline NuGet Global Feed Initializer for Offline Builds
+ NuGlobal is the offline NuGet global feed initializer and manager for
+ offline builds of .NET projects. It allows you to install NuGet package
+ files to either your home directory or to your systemwide configuration
+ directory so that they can get initialized for offline .NET builds.
