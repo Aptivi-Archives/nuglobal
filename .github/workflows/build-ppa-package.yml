@@ -31,10 +31,6 @@ jobs:
           sudo apt autoremove
           sudo apt install curl locales-all cli-common-dev libunwind8-dev libcurl4-openssl-dev rustc cargo devscripts debhelper-compat dput
         
-      - name: Initialize offline package
-        run: |
-          make debian-init-offline
-        
       - name: Make original package
         run: |
           mv debian ..

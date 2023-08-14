@@ -29,7 +29,6 @@ jobs:
       - name: Initialize offline package
         run: |
           sudo ip netns add no-net
-          make debian-init-offline
         
       - name: Try to build
         run: |
