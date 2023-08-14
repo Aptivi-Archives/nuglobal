@@ -31,8 +31,8 @@ jobs:
         run: |
           mv debian ..
           mv .github ..
-          tar cfv ../nuglobal_0.1.0-1.orig.tar .
-          xz ../nuglobal_0.1.0-1.orig.tar
+          tar cfv ../nuglobal_0.1.0.orig.tar .
+          xz ../nuglobal_0.1.0.orig.tar
           mv ../debian .
 
       - name: Build package
