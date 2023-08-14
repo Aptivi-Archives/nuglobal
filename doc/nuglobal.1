@@ -1,0 +1,52 @@
+.\" 
+.\"    NuGlobal  Copyright (C) 2018-2023  Aptivi
+.\" 
+.\"    NuGlobal is free software: you can redistribute it and/or modify
+.\"    it under the terms of the GNU General Public License as published by
+.\"    the Free Software Foundation, either version 3 of the License, or
+.\"    (at your option) any later version.
+.\"
+.\"    NuGlobal is distributed in the hope that it will be useful,
+.\"    but WITHOUT ANY WARRANTY; without even the implied warranty of
+.\"    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+.\"    GNU General Public License for more details.
+.\"
+.\"    You should have received a copy of the GNU General Public License
+.\"    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+.\"
+
+.TH ks 1 "14 Aug 2023" "0.1.0-Man1.0" "NuGlobal"
+.SH NAME
+nuglobal \- Offline NuGet Global Feed Initializer for Offline Builds
+.SH SYNOPSIS
+nuglobal \<mode\> \<args\>
+.SH DESCRIPTION
+nuglobal is the offline NuGet global feed initializer for .NET offline builds. It allows you to install NuGet package files to either your home direcotyr or to your systemwide configuration directory so that they can get initialized for offline .NET builds.
+.SH OPTIONS
+Currently, it supports the following options:
+.TP 4
+.B install \<group\> \<package\>
+Adds a nupkg package to a group found in the per-user directory source (default is /etc/ng/packages/\<group\>)
+.TP 4
+.B install-systemwide \<group\> \<package\>
+Adds a nupkg package to a group found in the systemwide directory source (default is $HOME/.config/ng/packages/\<group\>/)
+.TP 4
+.B uninstall \<group\> \<package\>
+Removes a nupkg package from the per-user directory source
+.TP 4
+.B uninstall-systemwide \<group\> \<package\>
+Removes a nupkg package from the systemwide directory source
+.TP 4
+.B list \<group\>
+Lists installed nupkg packages in the per-user directory source
+.TP 4
+.B list-systemwide \<group\>
+Lists installed nupkg packages in the systemwide directory source
+.TP 4
+.B init \<group\> \<target\>
+Copies all the packages from the group to a target directory
+.TP 4
+.B init-systemwide \<group\> \<target\>
+Copies all the packages from the systemwide group to a target directory
+.SH AUTHOR
+Aptivi (eoflaoevicecity@gmail.com)
