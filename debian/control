@@ -9,7 +9,7 @@ Vcs-Browser: https://github.com/Aptivi/nuglobal
 Vcs-Git: https://github.com/Aptivi/nuglobal.git
 
 Package: nuglobal
-Architecture: amd64
+Architecture: amd64 arm64
 Depends: ${shlibs:Depends}, ${misc:Depends}, cargo, rustc
 Description: Offline NuGet Global Feed Initializer for Offline Builds
  NuGlobal is the offline NuGet global feed initializer and manager for
