@@ -25,7 +25,7 @@ use crate::ng_error::NgError;
 
 pub fn ng_get_packages_path_systemwide(group: &str) -> Result<String, NgError> {
     let path_match = match OS {
-        "linux" => Ok(format!("/etc/ng/packages/{group}/")),
+        "linux" => Ok(format!("/usr/share/ng/packages/{group}/")),
         "windows" => match var("ALLUSERSPROFILE") {
             Ok(homedir)  => Ok(format!("{homedir}/NuGlobal/Packages/{group}/")),
             Err(_e)      => Err(NgError),
