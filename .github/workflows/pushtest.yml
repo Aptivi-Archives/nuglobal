@@ -26,12 +26,12 @@ jobs:
         run: |
           mv debian ..
           mv .github ..
-          tar cfv ../nuglobal_0.1.0.orig.tar .
-          xz ../nuglobal_0.1.0.orig.tar
+          tar cfv ../nuglobal_0.1.1.orig.tar .
+          xz ../nuglobal_0.1.1.orig.tar
           mv ../debian .
 
       - name: Build source package
         run: debuild -S -sa
         
       - name: Push to Launchpad
-        run: dput ppa:eofla/aptivi-devapps ../nuglobal_0.1.0*_source.changes
+        run: dput ppa:eofla/aptivi-devapps ../nuglobal_0.1.1*_source.changes

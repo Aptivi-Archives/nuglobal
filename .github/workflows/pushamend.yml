@@ -24,12 +24,12 @@ jobs:
         
       - name: Download original source
         run: |
-          wget --output-document=../nuglobal_0.1.0.orig.tar.xz https://launchpad.net/~eofla/+archive/ubuntu/aptivi-devapps/+sourcefiles/nuglobal/0.1.0/nuglobal_0.1.0.orig.tar.xz
-          tar xf ../nuglobal_0.1.0.orig.tar.xz .
+          wget --output-document=../nuglobal_0.1.1.orig.tar.xz https://launchpad.net/~eofla/+archive/ubuntu/aptivi-devapps/+sourcefiles/nuglobal/0.1.1/nuglobal_0.1.1.orig.tar.xz
+          tar xf ../nuglobal_0.1.1.orig.tar.xz .
           mv .github ..
 
       - name: Build source package
         run: debuild -S
         
       - name: Push to Launchpad
-        run: dput ppa:eofla/aptivi-devapps ../nuglobal_0.1.0*_source.changes
+        run: dput ppa:eofla/aptivi-devapps ../nuglobal_0.1.1*_source.changes

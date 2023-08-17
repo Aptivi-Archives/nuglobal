@@ -1,6 +1,11 @@
+nuglobal (0.1.1-1) jammy; urgency=medium
+
+  * Fixed invalid format of NuGet.config
+
+ -- EoflaOE <eoflaoevicecity@gmail.com>  Thu, 17 Aug 2023 12:41:50 +0300
+
 nuglobal (0.1.0-1) jammy; urgency=medium
 
   * Initial release
 
  -- EoflaOE <eoflaoevicecity@gmail.com>  Mon, 14 Aug 2023 20:48:50 +0300
-

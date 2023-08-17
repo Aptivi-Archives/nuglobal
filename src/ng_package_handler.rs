@@ -282,8 +282,7 @@ pub fn ng_init_packages(group: &str, path_to_target: &str, systemwide: bool) -> 
         None => (),
     };
     let ng_nuget_config_contents =
-    r#"
-<?xml version="1.0" encoding="utf-8"?>
+    r#"<?xml version="1.0" encoding="utf-8"?>
 <configuration>
     <packageSources>
         <clear />
